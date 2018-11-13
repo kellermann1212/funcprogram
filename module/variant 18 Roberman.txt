@@ -1,0 +1,5 @@
+def getSimilarity(l1: List[Int], l2: List[Int]) =
+  if (l1.length != l2.length) { false } else if (l1.zip(l2).count({case (x,y) => x != y}) == 0) { true  } else { false }
+
+println(getSimilarity(List(1, 2, 3), List(1, 2, 3)))
+println(getSimilarity(List(1, 2, 3), List(1, 2, 4)))
